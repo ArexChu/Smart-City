@@ -21,7 +21,7 @@
             android:layout_width="46dp"
             android:layout_height="46dp">
 
-            <net.oschina.app.improve.widget.PortraitView
+            <net.oschina.ecust.improve.widget.PortraitView
                 android:id="@+id/civ_author"
                 android:layout_width="46dp"
                 android:layout_height="46dp"
@@ -60,7 +60,7 @@
                     android:textColor="#111111"
                     android:textSize="@dimen/font_16" />
 
-                <net.oschina.app.improve.widget.IdentityView
+                <net.oschina.ecust.improve.widget.IdentityView
                     android:id="@+id/identityView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -7,7 +7,7 @@
              android:background="@color/white"
              android:orientation="vertical">
 
-    <net.oschina.app.improve.widget.RecyclerRefreshLayout
+    <net.oschina.ecust.improve.widget.RecyclerRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -87,9 +87,9 @@
                 android:scrollbars="vertical"/>
 
         </LinearLayout>
-    </net.oschina.app.improve.widget.RecyclerRefreshLayout>
+    </net.oschina.ecust.improve.widget.RecyclerRefreshLayout>
 
-    <net.oschina.app.ui.empty.EmptyLayout
+    <net.oschina.ecust.ui.empty.EmptyLayout
         android:id="@+id/error_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

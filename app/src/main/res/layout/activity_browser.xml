@@ -4,9 +4,9 @@
     android:id="@+id/activity_browser"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="net.oschina.app.improve.main.BrowserActivity">
+    tools:context="net.oschina.ecust.improve.main.BrowserActivity">
 
-    <net.oschina.app.improve.widget.OWebView
+    <net.oschina.ecust.improve.widget.OWebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

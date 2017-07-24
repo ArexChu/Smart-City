@@ -12,7 +12,7 @@ import android.text.format.Time;
 import android.view.MotionEvent;
 import android.view.View;
 
-import net.oschina.app.R;
+import net.oschina.ecust.R;
 
 import java.security.InvalidParameterException;
 import java.text.DateFormatSymbols;

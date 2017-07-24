@@ -6,12 +6,12 @@
     android:background="@color/white"
     android:minHeight="184dp">
 
-    <net.oschina.app.improve.widget.indicator.BannerView
+    <net.oschina.ecust.improve.widget.indicator.BannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <net.oschina.app.improve.main.banner.CircleBannerIndicator
+    <net.oschina.ecust.improve.main.banner.CircleBannerIndicator
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

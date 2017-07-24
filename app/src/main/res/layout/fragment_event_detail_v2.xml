@@ -67,7 +67,7 @@
                 android:paddingRight="@dimen/lay_16"
                 android:paddingTop="@dimen/lay_8">
 
-                <net.oschina.app.improve.widget.PortraitView
+                <net.oschina.ecust.improve.widget.PortraitView
                     android:id="@+id/civ_author"
                     android:layout_width="25dp"
                     android:layout_height="25dp"
@@ -204,7 +204,7 @@
                 android:paddingRight="16dp"
                 android:paddingTop="@dimen/lay_12">
 
-                <net.oschina.app.improve.widget.OWebView
+                <net.oschina.ecust.improve.widget.OWebView
                     android:id="@+id/webView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />

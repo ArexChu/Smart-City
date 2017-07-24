@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:clickable="true"
     android:orientation="vertical"
-    tools:context="net.oschina.app.improve.tweet.activities.TweetPublishQueueActivity">
+    tools:context="net.oschina.ecust.improve.tweet.activities.TweetPublishQueueActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

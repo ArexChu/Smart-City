@@ -85,7 +85,7 @@
             android:visibility="gone"
             tools:text="索引" />
 
-        <net.oschina.app.widget.IndexView
+        <net.oschina.ecust.widget.IndexView
             android:id="@+id/lay_index"
             android:layout_width="32dp"
             android:layout_height="match_parent"
@@ -94,7 +94,7 @@
             android:textSize="@dimen/font_14"
             tools:ignore="RtlHardcoded,RtlSymmetry" />
 
-        <net.oschina.app.ui.empty.EmptyLayout
+        <net.oschina.ecust.ui.empty.EmptyLayout
             android:id="@+id/lay_error"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

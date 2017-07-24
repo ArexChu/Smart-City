@@ -11,7 +11,7 @@
         style="@style/wrap_wrap"
         android:scrollbars="none" />
     
-    <net.oschina.app.ui.empty.EmptyLayout 
+    <net.oschina.ecust.ui.empty.EmptyLayout
         android:id="@+id/error_layout"
         style="@style/fill_fill" />
 

@@ -15,7 +15,7 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp">
 
-        <net.oschina.app.improve.widget.PortraitView
+        <net.oschina.ecust.improve.widget.PortraitView
             android:id="@+id/iv_avatar"
             style="@style/user_face_image" />
 
@@ -35,7 +35,7 @@
                 android:textSize="16sp"
                 tools:text="用户名" />
 
-            <net.oschina.app.improve.widget.IdentityView
+            <net.oschina.ecust.improve.widget.IdentityView
                 android:id="@+id/identityView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

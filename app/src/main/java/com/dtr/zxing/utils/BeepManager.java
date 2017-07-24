@@ -28,7 +28,7 @@ import android.util.Log;
 
 import com.dtr.zxing.activity.CaptureActivity;
 
-import net.oschina.app.R;
+import net.oschina.ecust.R;
 
 import java.io.Closeable;
 import java.io.IOException;

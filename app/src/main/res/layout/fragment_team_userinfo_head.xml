@@ -6,7 +6,7 @@
     android:orientation="horizontal"
     android:padding="10dp">
 
-    <net.oschina.app.widget.AvatarView
+    <net.oschina.ecust.widget.AvatarView
         android:id="@+id/fragment_team_head"
         android:layout_width="50dp"
         android:layout_height="50dp"

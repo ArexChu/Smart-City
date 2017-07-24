@@ -20,7 +20,7 @@
         android:paddingRight="8dp"
         tools:ignore="RtlSymmetry">
 
-        <net.oschina.app.improve.widget.PortraitView
+        <net.oschina.ecust.improve.widget.PortraitView
             android:id="@+id/iv_avatar"
             android:clickable="false"
             android:focusable="false"
@@ -55,7 +55,7 @@
                     android:textSize="14sp"
                     tools:text="年轻的小蜜蜂" />
 
-                <net.oschina.app.improve.widget.IdentityView
+                <net.oschina.ecust.improve.widget.IdentityView
                     android:id="@+id/identityView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
-    <net.oschina.app.widget.TweetTextView
+    <net.oschina.ecust.widget.TweetTextView
         android:id="@+id/tv_content"
         android:clickable="false"
         android:focusable="false"

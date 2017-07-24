@@ -18,7 +18,7 @@
         android:paddingRight="@dimen/lay_16"
         android:paddingTop="@dimen/lay_16">
 
-        <net.oschina.app.improve.widget.PortraitView
+        <net.oschina.ecust.improve.widget.PortraitView
             android:id="@+id/iv_user_avatar"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -50,7 +50,7 @@
                     android:textSize="16sp"
                     tools:text="Large Text" />
 
-                <net.oschina.app.improve.widget.IdentityView
+                <net.oschina.ecust.improve.widget.IdentityView
                     android:id="@+id/identityView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

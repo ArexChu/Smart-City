@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:minHeight="130dp">
 
-    <net.oschina.app.improve.widget.indicator.BannerView
+    <net.oschina.ecust.improve.widget.indicator.BannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -37,7 +37,7 @@
                 android:textColor="@color/white"
                 tools:text="周五乱弹 — 饿的时候只有一个饼！还是画的" />
 
-            <net.oschina.app.improve.main.banner.CircleBannerIndicator
+            <net.oschina.ecust.improve.main.banner.CircleBannerIndicator
                 android:id="@+id/indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

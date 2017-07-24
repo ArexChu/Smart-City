@@ -7,7 +7,7 @@
     android:background="?attr/layout_bg_normal"
     android:padding="@dimen/space_8">
 
-    <net.oschina.app.widget.AvatarView
+    <net.oschina.ecust.widget.AvatarView
         android:id="@+id/iv_avatar"
         style="@style/user_face_image" />
 
@@ -51,7 +51,7 @@
             android:orientation="vertical"
             android:padding="@dimen/space_8" >
 
-            <net.oschina.app.widget.TweetTextView
+            <net.oschina.ecust.widget.TweetTextView
                 android:id="@+id/tv_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

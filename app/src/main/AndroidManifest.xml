@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><!--suppress DeprecatedClassUsageInspection -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="net.oschina.app">
+    package="net.oschina.ecust">
 
     <!--自定义android 7.0自动更新下载完成弹窗安装申请意图的action的权限，危险级别为签名级别，即官方签名apk才能使用该权限-->
     <permission
-        android:name="net.oschina.app.ACCESS_UPDATE_RESULT"
+        android:name="net.oschina.ecust.ACCESS_UPDATE_RESULT"
         android:protectionLevel="signature" />
 
     <!--百度地图lbs雷达功能请求权限-->
@@ -73,14 +73,14 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name=".OSCApplication"
+        android:name="net.oschina.ecust.OSCApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/App.Theme.Light"
         tools:replace="android:allowBackup">
         <activity
-            android:name=".LaunchActivity"
+            android:name="net.oschina.ecust.LaunchActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Launch">
@@ -91,26 +91,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.DetailActivity"
+            android:name="net.oschina.ecust.ui.DetailActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".ui.SimpleBackActivity"
+            android:name="net.oschina.ecust.ui.SimpleBackActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|stateUnchanged" />
         <activity
-            android:name=".team.ui.TeamMainActivity"
+            android:name="net.oschina.ecust.team.ui.TeamMainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Light" />
         <activity
-            android:name=".team.ui.TeamNewActiveActivity"
+            android:name="net.oschina.ecust.team.ui.TeamNewActiveActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".team.ui.TeamNewIssueActivity"
+            android:name="net.oschina.ecust.team.ui.TeamNewIssueActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="新团队任务"
             android:screenOrientation="portrait"
@@ -120,7 +120,7 @@
             android:label="@string/actionbar_title_qr_scan"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.OSCPhotosActivity"
+            android:name="net.oschina.ecust.ui.OSCPhotosActivity"
             android:label=""
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
@@ -155,7 +155,7 @@
             android:launchMode="singleTop"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="net.oschina.ecust.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -169,102 +169,102 @@
         <!-- ############ QQ空间和QQ  wechat SSO授权的Activity注册完 ############ -->
 
         <activity
-            android:name=".improve.detail.general.NewsDetailActivity"
+            android:name="net.oschina.ecust.improve.detail.general.NewsDetailActivity"
             android:label="资讯详情"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Tweet.Main"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.detail.general.BlogDetailActivity"
+            android:name="net.oschina.ecust.improve.detail.general.BlogDetailActivity"
             android:label="博客详情"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Tweet.Main"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.detail.general.QuestionDetailActivity"
+            android:name="net.oschina.ecust.improve.detail.general.QuestionDetailActivity"
             android:label="问答详情"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Tweet.Main"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.detail.general.EventDetailActivity"
+            android:name="net.oschina.ecust.improve.detail.general.EventDetailActivity"
             android:label="活动详情"
             android:screenOrientation="portrait"
             android:theme="@style/Base.App.Theme"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.detail.apply.ApplyActivity"
+            android:name="net.oschina.ecust.improve.detail.apply.ApplyActivity"
             android:label="活动出席人"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.user.sign.InvitationActivity"
+            android:name="net.oschina.ecust.improve.user.sign.InvitationActivity"
             android:label="活动报名"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.user.sign.up.SignUpInfoActivity"
+            android:name="net.oschina.ecust.improve.user.sign.up.SignUpInfoActivity"
             android:label="我的报名信息"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.user.sign.in.SignInInfoActivity"
+            android:name="net.oschina.ecust.improve.user.sign.in.SignInInfoActivity"
             android:label="活动签到"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.detail.general.SoftwareDetailActivity"
+            android:name="net.oschina.ecust.improve.detail.general.SoftwareDetailActivity"
             android:label="软件详情"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Tweet.Main"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.tweet.activities.TweetDetailActivity"
+            android:name="net.oschina.ecust.improve.tweet.activities.TweetDetailActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="动弹详情"
             android:screenOrientation="portrait"
             android:theme="@style/Base.App.Theme.NoTitle"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.detail.sign.SignUpActivity"
+            android:name="net.oschina.ecust.improve.detail.sign.SignUpActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="活动报名"
             android:screenOrientation="portrait"
             android:theme="@style/ThemeTranslucent"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.user.activities.UserTweetActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserTweetActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="动弹列表"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.user.activities.UserFollowsActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserFollowsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="关注列表"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.user.activities.UserFansActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserFansActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="粉丝列表"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.comment.QuesAnswerDetailActivity"
+            android:name="net.oschina.ecust.improve.comment.QuesAnswerDetailActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="问答答案详情"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.comment.CommentsActivity"
+            android:name="net.oschina.ecust.improve.comment.CommentsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="评论列表"
             android:screenOrientation="portrait"
             android:theme="@style/Base.App.Theme.NoTitle"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".improve.main.SchemeUrlActivity"
+            android:name="net.oschina.ecust.improve.main.SchemeUrlActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -323,7 +323,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".improve.tweet.activities.TweetPublishActivity"
+            android:name="net.oschina.ecust.improve.tweet.activities.TweetPublishActivity"
             android:label="弹一弹"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -352,14 +352,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".improve.user.activities.OtherUserHomeActivity"
+            android:name="net.oschina.ecust.improve.user.activities.OtherUserHomeActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="用户主页"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Base.App.Theme" />
         <activity
-            android:name=".improve.tweet.activities.TopicTweetActivity"
+            android:name="net.oschina.ecust.improve.tweet.activities.TopicTweetActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="话题动弹"
             android:screenOrientation="portrait"
@@ -367,7 +367,7 @@
 
         <!-- 新账户中心模块 -->
         <activity
-            android:name=".improve.account.activity.LoginActivity"
+            android:name="net.oschina.ecust.improve.account.activity.LoginActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="登录中心"
             android:launchMode="singleTop"
@@ -375,7 +375,7 @@
             android:theme="@style/Account_Base.App.Theme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".improve.account.activity.RegisterStepOneActivity"
+            android:name="net.oschina.ecust.improve.account.activity.RegisterStepOneActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="注册中心一"
             android:launchMode="singleTop"
@@ -383,7 +383,7 @@
             android:theme="@style/Account_Base.App.Theme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".improve.account.activity.RegisterStepTwoActivity"
+            android:name="net.oschina.ecust.improve.account.activity.RegisterStepTwoActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="注册中心二"
             android:launchMode="singleTop"
@@ -391,7 +391,7 @@
             android:theme="@style/Account_Base.App.Theme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".improve.account.activity.RetrieveActivity"
+            android:name="net.oschina.ecust.improve.account.activity.RetrieveActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="密码找回"
             android:launchMode="singleTop"
@@ -399,7 +399,7 @@
             android:theme="@style/Account_Base.App.Theme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".improve.account.activity.ResetPwdActivity"
+            android:name="net.oschina.ecust.improve.account.activity.ResetPwdActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="密码重置"
             android:launchMode="singleTop"
@@ -409,91 +409,91 @@
 
         <!-- 新账户中心模块完 -->
         <activity
-            android:name=".improve.user.activities.UserMessageActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserMessageActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="消息中心"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.user.activities.UserSendMessageActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserSendMessageActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="聊天界面"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.media.SelectImageActivity"
+            android:name="net.oschina.ecust.improve.media.SelectImageActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="选择图片"
             android:screenOrientation="portrait"
             android:theme="@style/Base.App.Theme.NoTitle" />
         <activity
-            android:name=".improve.media.ImageGalleryActivity"
+            android:name="net.oschina.ecust.improve.media.ImageGalleryActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="图片预览"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Dialog.NoTitle.Translucent" />
         <activity
-            android:name=".improve.main.update.UpdateActivity"
+            android:name="net.oschina.ecust.improve.main.update.UpdateActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="在线更新"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Dialog.NoTitle.Translucent" />
         <activity
-            android:name=".improve.media.crop.CropActivity"
+            android:name="net.oschina.ecust.improve.media.crop.CropActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="图片裁剪"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Dialog.NoTitle.Translucent" />
         <activity
-            android:name=".improve.tweet.activities.TweetPublishQueueActivity"
+            android:name="net.oschina.ecust.improve.tweet.activities.TweetPublishQueueActivity"
             android:label="动弹队列"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/Base.App.Theme.NoTitle" />
         <activity
-            android:name=".improve.main.MainActivity"
+            android:name="net.oschina.ecust.improve.main.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Main" />
         <activity
-            android:name=".improve.search.activities.SearchActivity"
+            android:name="net.oschina.ecust.improve.search.activities.SearchActivity"
             android:label="搜索"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Search"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".improve.main.discover.ShakePresentActivity"
+            android:name="net.oschina.ecust.improve.main.discover.ShakePresentActivity"
             android:label="摇一摇"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.user.collection.UserCollectionActivity"
+            android:name="net.oschina.ecust.improve.user.collection.UserCollectionActivity"
             android:label="收藏"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.main.ErrorActivity"
+            android:name="net.oschina.ecust.improve.main.ErrorActivity"
             android:exported="false"
             android:label="错误信息"
             android:launchMode="singleTask"
             android:process=":crashInfo"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.user.event.UserEventActivity"
+            android:name="net.oschina.ecust.improve.user.event.UserEventActivity"
             android:label="我的活动"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.main.FeedBackActivity"
+            android:name="net.oschina.ecust.improve.main.FeedBackActivity"
             android:label="意见反馈"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.user.activities.UserEventSigninActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserEventSigninActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="活动签到"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name=".improve.user.activities.UserSelectFriendsActivity"
+            android:name="net.oschina.ecust.improve.user.activities.UserSelectFriendsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="选择好友"
             android:launchMode="singleTop"
@@ -501,73 +501,73 @@
             android:theme="@style/App.Theme.Light"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
-            android:name=".improve.search.activities.NearbyActivity"
+            android:name="net.oschina.ecust.improve.search.activities.NearbyActivity"
             android:label="@string/near_bodies_hint"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".improve.tweet.activities.TweetTopicActivity"
+            android:name="net.oschina.ecust.improve.tweet.activities.TweetTopicActivity"
             android:label="话题"
             android:screenOrientation="portrait"
             android:theme="@style/App.Theme.Light" />
 
         <activity
-            android:name=".improve.git.feature.FeatureActivity"
+            android:name="net.oschina.ecust.improve.git.feature.FeatureActivity"
             android:label="码云推荐"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.git.gist.GistActivity"
+            android:name="net.oschina.ecust.improve.git.gist.GistActivity"
             android:label="代码片段"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.git.gist.detail.GistDetailActivity"
+            android:name="net.oschina.ecust.improve.git.gist.detail.GistDetailActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="代码片段详情"
             android:screenOrientation="sensor" />
         <activity
-            android:name=".improve.git.gist.comment.GistCommentActivity"
+            android:name="net.oschina.ecust.improve.git.gist.comment.GistCommentActivity"
             android:label="代码片段评论"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".improve.git.detail.ProjectDetailActivity"
+            android:name="net.oschina.ecust.improve.git.detail.ProjectDetailActivity"
             android:label="项目详情"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".improve.git.tree.TreeActivity"
+            android:name="net.oschina.ecust.improve.git.tree.TreeActivity"
             android:label="代码"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".improve.git.code.CodeDetailActivity"
+            android:name="net.oschina.ecust.improve.git.code.CodeDetailActivity"
             android:label="代码详情"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="sensor" />
 
         <activity
-            android:name=".improve.git.comment.CommentActivity"
+            android:name="net.oschina.ecust.improve.git.comment.CommentActivity"
             android:label="项目评论"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".improve.main.BrowserActivity"
+            android:name="net.oschina.ecust.improve.main.BrowserActivity"
             android:screenOrientation="portrait" />
 
         <service
-            android:name=".improve.tweet.service.TweetPublishService"
+            android:name="net.oschina.ecust.improve.tweet.service.TweetPublishService"
             android:exported="true"
             android:process="net.oschina.app.tweet.TweetPublishService" />
         <service
-            android:name=".improve.notice.NoticeServer"
+            android:name="net.oschina.ecust.improve.notice.NoticeServer"
             android:exported="false"
             android:process="net.oschina.app.notice.NoticeServer" />
         <service
-            android:name=".improve.main.update.DownloadService"
+            android:name="net.oschina.ecust.improve.main.update.DownloadService"
             android:exported="false" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="net.oschina.app.provider"
+            android:authorities="net.oschina.ecust.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

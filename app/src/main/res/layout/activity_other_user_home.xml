@@ -22,7 +22,7 @@
             app:expandedTitleTextAppearance="@android:color/transparent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-            <net.oschina.app.improve.widget.SolarSystemView
+            <net.oschina.ecust.improve.widget.SolarSystemView
                 android:id="@+id/view_solar_system"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -46,7 +46,7 @@
                     android:layout_marginTop="?attr/actionBarSize"
                     android:gravity="center">
 
-                    <net.oschina.app.improve.widget.PortraitView
+                    <net.oschina.ecust.improve.widget.PortraitView
                         android:id="@+id/iv_portrait"
                         android:layout_width="74dp"
                         android:layout_height="74dp"
@@ -75,7 +75,7 @@
                     android:textSize="20sp"
                     tools:text="thanatosx" />
 
-                <net.oschina.app.improve.widget.IdentityView
+                <net.oschina.ecust.improve.widget.IdentityView
                     android:id="@+id/identityView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin">
 
-                <net.oschina.app.improve.widget.PortraitView
+                <net.oschina.ecust.improve.widget.PortraitView
                     android:id="@+id/iv_logo_portrait"
                     android:layout_width="34dp"
                     android:layout_height="34dp"

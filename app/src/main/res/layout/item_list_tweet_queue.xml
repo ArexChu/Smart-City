@@ -15,7 +15,7 @@
         android:paddingRight="@dimen/lay_16"
         android:paddingTop="@dimen/lay_16">
 
-        <net.oschina.app.widget.TweetTextView
+        <net.oschina.ecust.widget.TweetTextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

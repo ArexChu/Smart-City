@@ -80,7 +80,7 @@
             android:background="@color/white"
             android:visibility="visible" />
 
-        <net.oschina.app.ui.empty.EmptyLayout
+        <net.oschina.ecust.ui.empty.EmptyLayout
             android:id="@+id/emptyLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

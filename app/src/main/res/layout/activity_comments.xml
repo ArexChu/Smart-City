@@ -8,7 +8,7 @@
     android:background="@color/white"
     android:fitsSystemWindows="true"
     android:orientation="horizontal"
-    tools:context="net.oschina.app.improve.comment.CommentsActivity">
+    tools:context="net.oschina.ecust.improve.comment.CommentsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,11 +58,11 @@
             android:paddingBottom="@dimen/lay_48"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <net.oschina.app.improve.widget.CommentShareView
+            <net.oschina.ecust.improve.widget.CommentShareView
                 android:id="@+id/shareView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-            <net.oschina.app.improve.widget.RecyclerRefreshLayout
+            <net.oschina.ecust.improve.widget.RecyclerRefreshLayout
                 android:id="@+id/lay_refreshLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     tools:ignore="RtlSymmetry" />
-            </net.oschina.app.improve.widget.RecyclerRefreshLayout>
+            </net.oschina.ecust.improve.widget.RecyclerRefreshLayout>
         </FrameLayout>
 
     </LinearLayout>

@@ -6,7 +6,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/space_15" >
 
-    <net.oschina.app.widget.AvatarView
+    <net.oschina.ecust.widget.AvatarView
         android:id="@+id/iv_avatar"
         style="@style/user_face_image"
         android:layout_marginRight="10dp"/>

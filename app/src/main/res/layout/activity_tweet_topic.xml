@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="net.oschina.app.improve.tweet.activities.TweetTopicActivity">
+    tools:context="net.oschina.ecust.improve.tweet.activities.TweetTopicActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

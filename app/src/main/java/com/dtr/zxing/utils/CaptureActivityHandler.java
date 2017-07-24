@@ -27,7 +27,7 @@ import com.dtr.zxing.camera.CameraManager;
 import com.dtr.zxing.decode.DecodeThread;
 import com.google.zxing.Result;
 
-import net.oschina.app.R;
+import net.oschina.ecust.R;
 
 
 /**

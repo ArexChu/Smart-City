@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="220dp">
 
-        <net.oschina.app.improve.widget.SolarSystemView
+        <net.oschina.ecust.improve.widget.SolarSystemView
             android:id="@+id/user_view_solar_system"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <net.oschina.app.improve.widget.PortraitView
+                <net.oschina.ecust.improve.widget.PortraitView
                     android:id="@+id/iv_portrait"
                     android:layout_width="72dp"
                     android:layout_height="72dp"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <net.oschina.app.widget.TouchImageView
+    <net.oschina.ecust.widget.TouchImageView
         android:id="@+id/photoview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

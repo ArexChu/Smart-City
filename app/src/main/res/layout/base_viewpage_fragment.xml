@@ -11,7 +11,7 @@
         layout="@layout/actionbar_main_layout" />
 
     <!-- 导航标题栏 -->
-    <net.oschina.app.widget.PagerSlidingTabStrip
+    <net.oschina.ecust.widget.PagerSlidingTabStrip
         android:id="@+id/pager_tabstrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         android:layout_below="@id/view_pager_line" />
 
 
-    <net.oschina.app.ui.empty.EmptyLayout
+    <net.oschina.ecust.ui.empty.EmptyLayout
         android:id="@+id/error_layout"
         style="@style/fill_fill"
         android:visibility="gone" />

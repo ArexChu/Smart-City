@@ -4,7 +4,7 @@
     android:background="?attr/windows_bg"
     android:layout_height="match_parent" >
 
-    <net.oschina.app.ui.empty.EmptyLayout
+    <net.oschina.ecust.ui.empty.EmptyLayout
         android:id="@+id/error_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +18,7 @@
         android:layout_height="fill_parent"
         android:visibility="visible" >
 
-        <net.oschina.app.widget.KJDragGridView
+        <net.oschina.ecust.widget.KJDragGridView
             android:id="@+id/frag_note_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

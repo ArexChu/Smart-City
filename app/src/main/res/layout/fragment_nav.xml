@@ -4,9 +4,9 @@
     android:layout_height="48dp"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    tools:context="net.oschina.app.improve.main.nav.NavFragment">
+    tools:context="net.oschina.ecust.improve.main.nav.NavFragment">
 
-    <net.oschina.app.improve.main.nav.NavigationButton
+    <net.oschina.ecust.improve.main.nav.NavigationButton
         android:id="@+id/nav_item_news"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -14,7 +14,7 @@
         android:paddingLeft="@dimen/lay_12"
         android:paddingRight="@dimen/lay_12" />
 
-    <net.oschina.app.improve.main.nav.NavigationButton
+    <net.oschina.ecust.improve.main.nav.NavigationButton
         android:id="@+id/nav_item_tweet"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -33,7 +33,7 @@
         android:scaleType="centerInside"
         android:src="@drawable/ic_nav_add_selector" />
 
-    <net.oschina.app.improve.main.nav.NavigationButton
+    <net.oschina.ecust.improve.main.nav.NavigationButton
         android:id="@+id/nav_item_explore"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -41,7 +41,7 @@
         android:paddingLeft="@dimen/lay_12"
         android:paddingRight="@dimen/lay_12" />
 
-    <net.oschina.app.improve.main.nav.NavigationButton
+    <net.oschina.ecust.improve.main.nav.NavigationButton
         android:id="@+id/nav_item_me"
         android:layout_width="0dp"
         android:layout_height="match_parent"

@@ -51,7 +51,7 @@
             android:paddingRight="16dp"
             android:paddingTop="@dimen/lay_12">
 
-            <net.oschina.app.improve.widget.OWebView
+            <net.oschina.ecust.improve.widget.OWebView
                 android:id="@+id/webView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -101,13 +101,13 @@
             android:background="@color/list_divider_color"
             android:visibility="visible" />
 
-        <net.oschina.app.improve.comment.CommentView
+        <net.oschina.ecust.improve.comment.CommentView
             android:id="@+id/cv_comment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/ques_detail_bg_color" />
 
-        <net.oschina.app.improve.widget.ScreenView
+        <net.oschina.ecust.improve.widget.ScreenView
             android:id="@+id/screenView"
             android:layout_width="match_parent"
             android:layout_height="1px"

@@ -45,7 +45,7 @@
                     android:layout_marginRight="16dp"
                     android:orientation="horizontal">
 
-                    <net.oschina.app.improve.widget.PortraitView
+                    <net.oschina.ecust.improve.widget.PortraitView
                         android:id="@+id/iv_portrait"
                         android:layout_width="@dimen/size_48"
                         android:layout_height="@dimen/size_48"
@@ -68,7 +68,7 @@
                             android:textSize="16sp"
                             tools:text="李大神" />
 
-                        <net.oschina.app.improve.widget.IdentityView
+                        <net.oschina.ecust.improve.widget.IdentityView
                             android:id="@+id/identityView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
                     android:textSize="16sp"
                     tools:text="Content" />
 
-                <net.oschina.app.improve.widget.TweetPicturesLayout
+                <net.oschina.ecust.improve.widget.TweetPicturesLayout
                     android:id="@+id/tweet_pics_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -169,7 +169,7 @@
                         android:textSize="13sp"
                         tools:text="生产环境MySQL快速备份工具XtraBackup使用案例MySQL 的备份有很多种方式，最常用的应该是MySQLdump了，将数据库导出一个 sql文件，还原的时候source db.sql 就欢快的执行了。小伙伴愉快的布上一个shell脚本，配上…" />
 
-                    <net.oschina.app.improve.widget.TweetPicturesLayout
+                    <net.oschina.ecust.improve.widget.TweetPicturesLayout
                         android:id="@+id/layout_ref_images"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

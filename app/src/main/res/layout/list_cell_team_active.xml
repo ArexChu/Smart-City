@@ -41,7 +41,7 @@
         android:paddingRight="6dip"
         android:paddingTop="8dip">
 
-        <net.oschina.app.widget.AvatarView
+        <net.oschina.ecust.widget.AvatarView
             android:id="@+id/event_listitem_userface"
             style="@style/UserFaceImageStyle" />
 
@@ -58,7 +58,7 @@
                 android:textColor="?android:textColorLink"
                 android:textSize="14sp" />
 
-            <net.oschina.app.widget.TweetTextView
+            <net.oschina.ecust.widget.TweetTextView
                 android:id="@+id/event_listitem_content"
                 style="@style/events_list_content"
                 android:text="hello" />

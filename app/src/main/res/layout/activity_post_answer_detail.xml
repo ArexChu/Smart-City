@@ -23,7 +23,7 @@
             android:paddingTop="12dp"
             tools:ignore="RtlSymmetry">
 
-            <net.oschina.app.improve.widget.PortraitView
+            <net.oschina.ecust.improve.widget.PortraitView
                 android:id="@+id/iv_portrait"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
@@ -53,7 +53,7 @@
                         android:textSize="16sp"
                         tools:text="thanatosx" />
 
-                    <net.oschina.app.improve.widget.IdentityView
+                    <net.oschina.ecust.improve.widget.IdentityView
                         android:id="@+id/identityView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <net.oschina.app.improve.widget.OWebView
+            <net.oschina.ecust.improve.widget.OWebView
                 android:id="@+id/webview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

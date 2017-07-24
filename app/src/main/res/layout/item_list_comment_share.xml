@@ -16,7 +16,7 @@
         android:paddingRight="8dp"
         tools:ignore="RtlSymmetry">
 
-        <net.oschina.app.improve.widget.PortraitView
+        <net.oschina.ecust.improve.widget.PortraitView
             android:id="@+id/iv_avatar"
             android:layout_width="36dp"
             android:layout_height="36dp"
@@ -62,13 +62,13 @@
 
     </LinearLayout>
 
-    <net.oschina.app.improve.comment.CommentReferView
+    <net.oschina.ecust.improve.comment.CommentReferView
         android:id="@+id/lay_refer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
-    <net.oschina.app.widget.TweetTextView
+    <net.oschina.ecust.widget.TweetTextView
         android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

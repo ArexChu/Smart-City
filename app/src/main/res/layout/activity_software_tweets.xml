@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/ques_detail_bg_color">
 
-    <net.oschina.app.improve.widget.RecyclerRefreshLayout
+    <net.oschina.ecust.improve.widget.RecyclerRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,5 +18,5 @@
             android:scrollbars="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    </net.oschina.app.improve.widget.RecyclerRefreshLayout>
+    </net.oschina.ecust.improve.widget.RecyclerRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

@@ -182,12 +182,12 @@
                 android:layout_height="1px"
                 android:background="@color/list_divider_color" />
 
-            <net.oschina.app.improve.widget.DetailAboutView
+            <net.oschina.ecust.improve.widget.DetailAboutView
                 android:id="@+id/lay_detail_about"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <net.oschina.app.improve.comment.CommentView
+            <net.oschina.ecust.improve.comment.CommentView
                 android:id="@+id/lay_detail_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

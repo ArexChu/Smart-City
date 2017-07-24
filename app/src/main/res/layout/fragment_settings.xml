@@ -65,7 +65,7 @@
                 android:textColor="?attr/textColor"
                 android:textSize="@dimen/text_size_16"/>
 
-            <net.oschina.app.improve.widget.togglebutton.ToggleButton
+            <net.oschina.ecust.improve.widget.togglebutton.ToggleButton
                 android:id="@+id/tb_double_click_exit"
                 style="@style/option_item_toggleButton"/>
         </LinearLayout>

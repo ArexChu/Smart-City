@@ -5,12 +5,12 @@
     android:padding="4dp"
     android:background="?attr/layout_item_bg" >
 
-    <net.oschina.app.widget.AvatarView
+    <net.oschina.ecust.widget.AvatarView
         android:id="@+id/iv_avatar"
         style="@style/comment_user_face_image"
         android:layout_marginRight="@dimen/space_10" />
     
-    <net.oschina.app.widget.TweetTextView
+    <net.oschina.ecust.widget.TweetTextView
         android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -17,7 +17,7 @@
         android:paddingRight="@dimen/lay_16"
         android:paddingTop="@dimen/lay_16">
 
-        <net.oschina.app.improve.widget.PortraitView
+        <net.oschina.ecust.improve.widget.PortraitView
             android:id="@+id/iv_user_avatar"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -49,7 +49,7 @@
                     android:textSize="16sp"
                     tools:text="Large Text" />
 
-                <net.oschina.app.improve.widget.IdentityView
+                <net.oschina.ecust.improve.widget.IdentityView
                     android:id="@+id/identityView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             </LinearLayout>
 
 
-            <net.oschina.app.widget.TweetTextView
+            <net.oschina.ecust.widget.TweetTextView
                 android:id="@+id/tv_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
                 android:textSize="14sp"
                 tools:text="最近研究了这个项目，学习rx系列,修复了楼主的bug 主要原因里面资讯fragment的构建" />
 
-            <net.oschina.app.widget.TweetTextView
+            <net.oschina.ecust.widget.TweetTextView
                 android:id="@+id/tv_origin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

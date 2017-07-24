@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.nineoldandroids.animation.ObjectAnimator;
 
-import net.oschina.app.R;
+import net.oschina.ecust.R;
 
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;

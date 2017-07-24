@@ -19,7 +19,7 @@
             android:verticalSpacing="4dp" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <net.oschina.app.ui.empty.EmptyLayout
+    <net.oschina.ecust.ui.empty.EmptyLayout
         android:id="@+id/fragment_team_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

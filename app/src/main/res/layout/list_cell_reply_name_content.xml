@@ -14,7 +14,7 @@
         android:textColor="@color/lightblue"
         android:textSize="@dimen/text_size_12" />
 
-    <net.oschina.app.widget.TweetTextView
+    <net.oschina.ecust.widget.TweetTextView
         android:id="@+id/tv_reply_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

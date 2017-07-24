@@ -37,7 +37,7 @@
                 android:lines="1"
                 android:textColor="@color/white" />
 
-            <net.oschina.app.improve.widget.indicator.CirclePagerIndicator
+            <net.oschina.ecust.improve.widget.indicator.CirclePagerIndicator
                 android:id="@+id/indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

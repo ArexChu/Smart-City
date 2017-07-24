@@ -46,25 +46,25 @@ import com.google.zxing.Result;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.TextHttpResponseHandler;
 
-import net.oschina.app.AppContext;
-import net.oschina.app.AppException;
-import net.oschina.app.R;
-import net.oschina.app.api.remote.OSChinaApi;
-import net.oschina.app.base.BaseActivity;
-import net.oschina.app.bean.BarCode;
-import net.oschina.app.bean.ResultBean;
-import net.oschina.app.bean.SingInResult;
-import net.oschina.app.improve.account.AccountHelper;
-import net.oschina.app.improve.app.AppOperator;
-import net.oschina.app.improve.bean.SubBean;
-import net.oschina.app.improve.detail.general.EventDetailActivity;
-import net.oschina.app.improve.user.activities.UserEventSigninActivity;
-import net.oschina.app.improve.user.sign.up.SignUpInfoActivity;
-import net.oschina.app.improve.utils.DialogHelper;
-import net.oschina.app.improve.widget.SimplexToast;
-import net.oschina.app.util.StringUtils;
-import net.oschina.app.util.UIHelper;
-import net.oschina.app.util.XmlUtils;
+import net.oschina.ecust.AppContext;
+import net.oschina.ecust.AppException;
+import net.oschina.ecust.R;
+import net.oschina.ecust.api.remote.OSChinaApi;
+import net.oschina.ecust.base.BaseActivity;
+import net.oschina.ecust.bean.BarCode;
+import net.oschina.ecust.bean.ResultBean;
+import net.oschina.ecust.bean.SingInResult;
+import net.oschina.ecust.improve.account.AccountHelper;
+import net.oschina.ecust.improve.app.AppOperator;
+import net.oschina.ecust.improve.bean.SubBean;
+import net.oschina.ecust.improve.detail.general.EventDetailActivity;
+import net.oschina.ecust.improve.user.activities.UserEventSigninActivity;
+import net.oschina.ecust.improve.user.sign.up.SignUpInfoActivity;
+import net.oschina.ecust.improve.utils.DialogHelper;
+import net.oschina.ecust.improve.widget.SimplexToast;
+import net.oschina.ecust.util.StringUtils;
+import net.oschina.ecust.util.UIHelper;
+import net.oschina.ecust.util.XmlUtils;
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -261,8 +261,8 @@ public final class CaptureActivity extends BaseActivity implements
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, String responseString) {
                         try {
-                            net.oschina.app.improve.bean.base.ResultBean<SubBean> resultBean = AppOperator.createGson().fromJson(responseString,
-                                    new TypeToken<net.oschina.app.improve.bean.base.ResultBean<SubBean>>() {
+                            net.oschina.ecust.improve.bean.base.ResultBean<SubBean> resultBean = AppOperator.createGson().fromJson(responseString,
+                                    new TypeToken<net.oschina.ecust.improve.bean.base.ResultBean<SubBean>>() {
                                     }.getType());
                             if (resultBean.isSuccess()) {
                                 Map<String, Object> extra = resultBean.getResult().getExtra();

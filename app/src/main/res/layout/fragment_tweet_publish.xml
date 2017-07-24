@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="net.oschina.app.improve.tweet.fragments.TweetPublishFragment">
+    tools:context="net.oschina.ecust.improve.tweet.fragments.TweetPublishFragment">
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/layout_coordinator"
@@ -69,7 +69,7 @@
             android:padding="@dimen/lay_12"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <net.oschina.app.improve.tweet.widget.TweetPicturesPreviewer
+            <net.oschina.ecust.improve.tweet.widget.TweetPicturesPreviewer
                 android:id="@+id/recycler_images"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -248,7 +248,7 @@
 
         <View style="@style/h_line" />
 
-        <net.oschina.app.improve.face.FacePanelView
+        <net.oschina.ecust.improve.face.FacePanelView
             android:id="@+id/panel_face"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

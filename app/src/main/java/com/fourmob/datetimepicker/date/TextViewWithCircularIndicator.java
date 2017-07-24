@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import net.oschina.app.R;
+import net.oschina.ecust.R;
 
 /**
  * 摘取自https://github.com/flavienlaurent/datetimepicker

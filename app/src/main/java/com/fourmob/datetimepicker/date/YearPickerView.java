@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import net.oschina.app.R;
+import net.oschina.ecust.R;
 
 import java.util.ArrayList;
 import java.util.List;

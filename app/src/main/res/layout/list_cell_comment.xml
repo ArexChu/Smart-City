@@ -6,7 +6,7 @@
     android:background="?attr/layout_item_bg"
     android:padding="@dimen/space_10">
 
-    <net.oschina.app.widget.AvatarView
+    <net.oschina.ecust.widget.AvatarView
         android:id="@+id/iv_avatar"
         style="@style/comment_user_face_image"
         android:layout_marginRight="@dimen/space_10" />
@@ -25,7 +25,7 @@
         tools:text="刚刚"
         style="@style/list_text_info" />
 
-    <net.oschina.app.widget.FloorView
+    <net.oschina.ecust.widget.FloorView
         android:id="@+id/ly_refers"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         android:orientation="vertical"
         android:visibility="gone" />
 
-    <net.oschina.app.widget.TweetTextView
+    <net.oschina.ecust.widget.TweetTextView
         android:id="@+id/tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

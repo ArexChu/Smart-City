@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:background="@color/main_green">
 
-        <net.oschina.app.improve.widget.CommentShareView
+        <net.oschina.ecust.improve.widget.CommentShareView
             android:id="@+id/shareView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -40,7 +40,7 @@
 
         </LinearLayout>
 
-        <net.oschina.app.ui.empty.EmptyLayout
+        <net.oschina.ecust.ui.empty.EmptyLayout
             android:id="@+id/lay_error"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

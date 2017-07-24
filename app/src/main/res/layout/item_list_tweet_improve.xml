@@ -18,7 +18,7 @@
         android:paddingLeft="@dimen/lay_16"
         android:paddingTop="@dimen/lay_16">
 
-        <net.oschina.app.improve.widget.PortraitView
+        <net.oschina.ecust.improve.widget.PortraitView
             android:id="@+id/iv_tweet_face"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -48,7 +48,7 @@
                     android:textSize="16sp"
                     tools:text="Large Text" />
 
-                <net.oschina.app.improve.widget.IdentityView
+                <net.oschina.ecust.improve.widget.IdentityView
                     android:id="@+id/identityView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             </LinearLayout>
 
 
-            <net.oschina.app.widget.TweetTextView
+            <net.oschina.ecust.widget.TweetTextView
                 android:id="@+id/tweet_item"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                     android:textSize="13sp"
                     tools:text="生产环境MySQL快速备份工具XtraBackup使用案例MySQL 的备份有很多种方式，最常用的应该是MySQLdump了，将数据库导出一个 sql文件，还原的时候source db.sql 就欢快的执行了。小伙伴愉快的布上一个shell脚本，配上…" />
 
-                <net.oschina.app.improve.widget.TweetPicturesLayout
+                <net.oschina.ecust.improve.widget.TweetPicturesLayout
                     android:id="@+id/layout_ref_images"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                     app:verticalSpace="4dp" />
             </LinearLayout>
 
-            <net.oschina.app.improve.widget.TweetPicturesLayout
+            <net.oschina.ecust.improve.widget.TweetPicturesLayout
                 android:id="@+id/fl_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

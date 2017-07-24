@@ -64,7 +64,7 @@
         android:layout_below="@+id/toolbar"
         android:orientation="vertical">
 
-        <net.oschina.app.ui.empty.EmptyLayout
+        <net.oschina.ecust.ui.empty.EmptyLayout
             android:id="@+id/error_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

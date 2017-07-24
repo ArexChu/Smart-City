@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<net.oschina.app.emoji.JSViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<net.oschina.ecust.emoji.JSViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/emoji_pager"
     android:layout_width="match_parent"
     android:layout_height="0dp"

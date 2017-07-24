@@ -17,7 +17,7 @@
         android:src="@mipmap/ic_launcher"
         android:visibility="invisible" />
 
-    <net.oschina.app.widget.NoteItemCircleView
+    <net.oschina.ecust.widget.NoteItemCircleView
         android:id="@+id/note_detail_img_green"
         style="@style/note_detail_menu_item"
         android:layout_alignLeft="@+id/note_detail_img_menu"
@@ -26,7 +26,7 @@
         app:border_color="@color/white"
         app:border_width="2dip" />
 
-    <net.oschina.app.widget.NoteItemCircleView
+    <net.oschina.ecust.widget.NoteItemCircleView
         android:id="@+id/note_detail_img_blue"
         style="@style/note_detail_menu_item"
         android:layout_alignLeft="@+id/note_detail_img_menu"
@@ -35,7 +35,7 @@
         app:border_color="@color/white"
         app:border_width="2dip" />
 
-    <net.oschina.app.widget.NoteItemCircleView
+    <net.oschina.ecust.widget.NoteItemCircleView
         android:id="@+id/note_detail_img_purple"
         style="@style/note_detail_menu_item"
         android:layout_alignLeft="@+id/note_detail_img_menu"
@@ -44,7 +44,7 @@
         app:border_color="@color/white"
         app:border_width="2dip" />
 
-    <net.oschina.app.widget.NoteItemCircleView
+    <net.oschina.ecust.widget.NoteItemCircleView
         android:id="@+id/note_detail_img_yellow"
         style="@style/note_detail_menu_item"
         android:layout_alignLeft="@+id/note_detail_img_menu"
@@ -53,7 +53,7 @@
         app:border_color="@color/white"
         app:border_width="2dip" />
 
-    <net.oschina.app.widget.NoteItemCircleView
+    <net.oschina.ecust.widget.NoteItemCircleView
         android:id="@+id/note_detail_img_red"
         style="@style/note_detail_menu_item"
         android:layout_alignLeft="@+id/note_detail_img_menu"
