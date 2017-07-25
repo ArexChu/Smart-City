@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">开源中国</string>
+    <string name="app_name">海慧康</string>
 
-    <string name="main_tab_name_news">综合</string>
-    <string name="main_tab_name_tweet">动弹</string>
+    <string name="main_tab_name_news">主页</string>
+    <string name="main_tab_name_tweet">圈子</string>
     <string name="main_tab_name_my">我的</string>
-    <string name="main_tab_name_explore">发现</string>
+    <string name="main_tab_name_explore">家庭</string>
 
     <string name="event_status_end">活动结束</string>
     <string name="event_status_ing">正在报名</string>
@@ -113,7 +113,7 @@
     <string name="actionbar_title_note">便签</string>
     <string name="actionbar_title_note_edit">编辑便签</string>
     <!-- 找人不显示标题 -->
-    <string name="actionbar_title_event">我的活动</string>
+    <string name="actionbar_title_event">关于海慧康</string>
     <string name="actionbar_title_my_event">我的活动</string>
     <string name="actionbar_title_event_apply">活动出席人员</string>
     <string name="actionbar_title_same_city">同城</string>
@@ -177,11 +177,11 @@
     <string name="fans_count">新粉丝[%s] </string>
     <string name="like_count">收到赞[%s] </string>
 
-    <string name="blog">我的博客</string>
-    <string name="message">我的消息</string>
+    <string name="blog">我的咨询</string>
+    <string name="message">我的预约</string>
     <string name="team">我的团队</string>
     <string name="user_score">积分</string>
-    <string name="question">我的问答</string>
+    <string name="question">我的收藏</string>
 
     <string name="scan">扫一扫</string>
     <string name="shake">摇一摇</string>

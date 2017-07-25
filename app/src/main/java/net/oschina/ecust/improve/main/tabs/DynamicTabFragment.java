@@ -312,7 +312,7 @@ public class DynamicTabFragment extends BaseTitleFragment implements OnTabResele
 
     @Override
     protected int getTitleRes() {
-        return R.string.main_tab_name_news;
+        return R.string.main_tab_name_explore;
     }
 
     @OnClick(R.id.iv_arrow_down)

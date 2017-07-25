@@ -9,8 +9,8 @@ import net.oschina.ecust.improve.base.fragments.BaseGeneralListFragment;
 import net.oschina.ecust.improve.base.fragments.BaseGeneralRecyclerFragment;
 import net.oschina.ecust.improve.base.fragments.BaseViewPagerFragment;
 import net.oschina.ecust.improve.bean.SubTab;
-import net.oschina.ecust.improve.main.subscription.SubFragment;
 import net.oschina.ecust.improve.search.activities.SearchActivity;
+import net.oschina.ecust.improve.tweet.fragments.TopicTweetFragment;
 import net.oschina.ecust.improve.tweet.fragments.TweetFragment;
 import net.oschina.ecust.interf.OnTabReselectListener;
 
@@ -21,7 +21,7 @@ import net.oschina.ecust.interf.OnTabReselectListener;
  * Changed qiujuer
  * on 2016/9/5.
  */
-public class TweetViewPagerFragment extends BaseViewPagerFragment implements OnTabReselectListener {
+public class HomeViewPagerFragment extends BaseViewPagerFragment implements OnTabReselectListener {
 
     /**
      * @param catalog {@link TweetFragment}
@@ -75,21 +75,21 @@ public class TweetViewPagerFragment extends BaseViewPagerFragment implements OnT
         };*/
         return new PagerInfo[]{
 //                new PagerInfo("推荐话题", TopicTweetFragment.class, null),
-                new PagerInfo("热门话题", TweetFragment.class,
-                        getBundle(TweetFragment.CATALOG_NEW)),
-                new PagerInfo("我的圈子", TweetFragment.class,
-                        getBundle(TweetFragment.CATALOG_HOT)),
-//                new PagerInfo("每日乱弹", SubFragment.class,
-//                        bundle),
-//                new PagerInfo("我的动弹", TweetFragment.class,
-//                        getBundle(TweetFragment.CATALOG_MYSELF))
+                new PagerInfo("智慧健康", SmartHealthFragment.class,
+                        null),
+                new PagerInfo("智慧社区", SmartCommunityFragment.class,
+                        null),
+                new PagerInfo("智慧商城", SmartMallFragment.class,
+                        null),
+                new PagerInfo("社区互动", CommunityInteractionFragment.class,
+                        null)
 
         };
     }
 
     @Override
     protected int getTitleRes() {
-        return R.string.main_tab_name_tweet;
+        return R.string.main_tab_name_news;
     }
 
     @Override

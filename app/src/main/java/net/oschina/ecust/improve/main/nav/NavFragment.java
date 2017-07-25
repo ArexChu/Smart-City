@@ -17,6 +17,7 @@ import net.oschina.ecust.improve.account.AccountHelper;
 import net.oschina.ecust.improve.base.fragments.BaseFragment;
 import net.oschina.ecust.improve.main.tabs.DynamicTabFragment;
 import net.oschina.ecust.improve.main.tabs.ExploreFragment;
+import net.oschina.ecust.improve.main.tabs.HomeViewPagerFragment;
 import net.oschina.ecust.improve.main.tabs.TweetViewPagerFragment;
 import net.oschina.ecust.improve.notice.NoticeBean;
 import net.oschina.ecust.improve.notice.NoticeManager;
@@ -72,17 +73,25 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
         });
         root.setBackgroundDrawable(layerDrawable);
 
+//        mNavNews.init(R.drawable.tab_icon_new,
+//                R.string.main_tab_name_news,
+//                DynamicTabFragment.class);
+
         mNavNews.init(R.drawable.tab_icon_new,
                 R.string.main_tab_name_news,
-                DynamicTabFragment.class);
+                HomeViewPagerFragment.class);
 
         mNavTweet.init(R.drawable.tab_icon_tweet,
                 R.string.main_tab_name_tweet,
                 TweetViewPagerFragment.class);
 
+//        mNavExplore.init(R.drawable.tab_icon_explore,
+//                R.string.main_tab_name_explore,
+//                ExploreFragment.class);
+
         mNavExplore.init(R.drawable.tab_icon_explore,
                 R.string.main_tab_name_explore,
-                ExploreFragment.class);
+                DynamicTabFragment.class);
 
         mNavMe.init(R.drawable.tab_icon_me,
                 R.string.main_tab_name_my,
