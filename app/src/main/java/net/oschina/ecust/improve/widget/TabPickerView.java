@@ -23,9 +23,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import net.oschina.ecust.AppContext;
 import net.oschina.ecust.BuildConfig;
 import net.oschina.ecust.R;
+import net.oschina.ecust.improve.app.AppOperator;
 import net.oschina.ecust.improve.bean.SubTab;
 import net.oschina.ecust.util.TDevice;
 import net.oschina.ecust.util.TLog;
@@ -664,6 +668,18 @@ public class TabPickerView extends FrameLayout {
             mActiveDataSet = setupActiveDataSet();
             mOriginalDataSet = setupOriginalDataSet();
             mInactiveDataSet = new ArrayList<>();
+
+//            mActiveDataSet = new ArrayList<SubTab>();
+//            mOriginalDataSet = new ArrayList<SubTab>();
+//            Gson gson = new Gson();
+//            String json = "[{\"banner\":{\"catalog\":1,\"href\":\"https://www.oschina.net/action/apiv2//banner?catalog\\u003d1\"},\"fixed\":true,\"href\":\"https://www.oschina.net/action/apiv2/sub_list?token\\u003dd6112fa662bc4bf21084670a857fbd20\",\"isActived\":true,\"name\":\"开源资讯\",\"needLogin\":false,\"order\":1,\"subtype\":1,\"token\":\"d6112fa662bc4bf21084670a857fbd20\",\"type\":6},{\"fixed\":true,\"href\":\"https://www.oschina.net/action/apiv2/sub_list?token\\u003ddf985be3c5d5449f8dfb47e06e098ef9\",\"isActived\":true,\"name\":\"推荐博客\",\"needLogin\":false,\"order\":3,\"subtype\":4,\"token\":\"df985be3c5d5449f8dfb47e06e098ef9\",\"type\":3},{\"fixed\":true,\"href\":\"https://www.oschina.net/action/apiv2/sub_list?token\\u003d98d04eb58a1d12b75d254deecbc83790\",\"isActived\":true,\"name\":\"技术问答\",\"needLogin\":false,\"order\":2,\"subtype\":3,\"token\":\"98d04eb58a1d12b75d254deecbc83790\",\"type\":2},{\"fixed\":true,\"href\":\"https://www.oschina.net/action/apiv2/sub_list?token\\u003d1abf09a23a87442184c2f9bf9dc29e35\",\"isActived\":true,\"name\":\"每日一博\",\"needLogin\":false,\"order\":4,\"subtype\":1,\"token\":\"1abf09a23a87442184c2f9bf9dc29e35\",\"type\":3}]";
+//            Log.e("ArexJson", json);
+//            mActiveDataSet = gson.fromJson(json,new TypeToken<List<SubTab>>(){}.getType());
+//            mOriginalDataSet = gson.fromJson(json,new TypeToken<List<SubTab>>(){}.getType());
+//            String jsonactive = gson.toJson(mActiveDataSet);
+//            Log.e("ArexActive", jsonactive);
+//            String jsonorigin = gson.toJson(mOriginalDataSet);
+//            Log.e("ArexOrigin", jsonorigin);
 
             if (mOriginalDataSet == null || mOriginalDataSet.size() == 0) {
                 throw new RuntimeException("Original Data Set can't be null or empty");
