@@ -6,7 +6,7 @@
     },
     "fixed": true,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=d6112fa662bc4bf21084670a857fbd20",
-    "name": "开源资讯",
+    "name": "我",
     "needLogin": false,
     "isActived": true,
     "order": 1,
@@ -17,7 +17,7 @@
   {
     "fixed": true,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=df985be3c5d5449f8dfb47e06e098ef9",
-    "name": "推荐博客",
+    "name": "爸爸",
     "needLogin": false,
     "isActived": true,
     "order": 3,
@@ -28,7 +28,7 @@
   {
     "fixed": true,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=98d04eb58a1d12b75d254deecbc83790",
-    "name": "技术问答",
+    "name": "妈妈",
     "needLogin": false,
     "isActived": true,
     "order": 2,
@@ -39,7 +39,7 @@
   {
     "fixed": true,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=1abf09a23a87442184c2f9bf9dc29e35",
-    "name": "每日一博",
+    "name": "儿子",
     "needLogin": false,
     "isActived": true,
     "order": 4,
@@ -50,7 +50,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=299975006aa7f9b8a158deeb0d27a011",
-    "name": "码云推荐",
+    "name": "女儿",
     "needLogin": false,
     "isActived": false,
     "order": 70,
@@ -61,7 +61,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=e3e35d14a62b4f816ec878b6597b60aa",
-    "name": "热门资讯",
+    "name": "爱人",
     "needLogin": false,
     "isActived": false,
     "order": 71,
@@ -72,7 +72,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=177f171d41bb37d80c67bee14123f7e1",
-    "name": "最新翻译",
+    "name": "爷爷",
     "needLogin": false,
     "isActived": false,
     "order": 74,
@@ -83,7 +83,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=5718df855db5913f25cab8ee4f7c656c",
-    "name": "移动开发",
+    "name": "奶奶",
     "needLogin": false,
     "isActived": false,
     "order": 75,
@@ -94,7 +94,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=7975ce15d909bb61a6b85b9392db6149",
-    "name": "开源硬件",
+    "name": "外公",
     "needLogin": false,
     "isActived": false,
     "order": 76,
@@ -105,7 +105,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=99838268b3bc311a2e763a6a2c4bb9ec",
-    "name": "云计算",
+    "name": "外婆",
     "needLogin": false,
     "isActived": false,
     "order": 77,
@@ -116,7 +116,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=ce53a71a371867582eb3023415c83489",
-    "name": "软件工程",
+    "name": "岳父",
     "needLogin": false,
     "isActived": false,
     "order": 78,
@@ -127,7 +127,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=253b519335b59c011b6db7d1165932bf",
-    "name": "系统运维",
+    "name": "岳母",
     "needLogin": false,
     "isActived": false,
     "order": 79,
@@ -138,7 +138,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=ad0f1d9e413aeadde89eb899817edd81",
-    "name": "图像多媒体",
+    "name": "公公",
     "needLogin": false,
     "isActived": false,
     "order": 80,
@@ -149,7 +149,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=1d76f396e1aad15cf167754bfba9ca78",
-    "name": "企业开发",
+    "name": "婆婆",
     "needLogin": false,
     "isActived": false,
     "order": 81,
@@ -160,7 +160,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=471587b6f0a943f4d675281fa5d13975",
-    "name": "数据库",
+    "name": "叔叔",
     "needLogin": false,
     "isActived": false,
     "order": 82,
@@ -171,7 +171,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=285cfaccd55f60ebc919d30ad709c6b4",
-    "name": "编程语言",
+    "name": "姑姑",
     "needLogin": false,
     "isActived": false,
     "order": 83,
@@ -182,7 +182,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=5ca68e0307f68ccd2d181b07d45b110b",
-    "name": "游戏开发",
+    "name": "舅舅",
     "needLogin": false,
     "isActived": false,
     "order": 84,
@@ -193,7 +193,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=32704cb501253b0422544fd84b7de35b",
-    "name": "服务端开发",
+    "name": "舅妈",
     "needLogin": false,
     "isActived": false,
     "order": 85,
@@ -204,7 +204,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=1299ab1d9f2981cf6100083e106aa531",
-    "name": "前端开发",
+    "name": "姐姐",
     "needLogin": false,
     "isActived": false,
     "order": 86,
@@ -215,7 +215,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=63697c05f04140b1ca1dba8e0822ebf4",
-    "name": "源创君",
+    "name": "妹妹",
     "needLogin": false,
     "isActived": false,
     "order": 87,
@@ -226,7 +226,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=0048958a909973b5d83a8eca65d90afb",
-    "name": "最新博客",
+    "name": "哥哥",
     "needLogin": false,
     "isActived": false,
     "order": 90,
@@ -237,7 +237,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=b5a06540fdf8d2d4de5c40775585a188",
-    "name": "热门博客",
+    "name": "弟弟",
     "needLogin": false,
     "isActived": false,
     "order": 91,
@@ -248,7 +248,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=2953c7a3d4ebfbae2c45fd34698a6545",
-    "name": "站务建议",
+    "name": "侄子",
     "needLogin": false,
     "isActived": false,
     "order": 93,
@@ -259,7 +259,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=ce1231d4a15c3d1e944943a6aa54d695",
-    "name": "职业生涯",
+    "name": "侄女",
     "needLogin": false,
     "isActived": false,
     "order": 94,
@@ -270,7 +270,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=44fe8b07756796cf620dbd18a4cd56e1",
-    "name": "行业杂烩",
+    "name": "女婿",
     "needLogin": false,
     "isActived": false,
     "order": 95,
@@ -281,7 +281,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=b56759c46cb81192b7d1cbb1a478a45d",
-    "name": "技术分享",
+    "name": "儿媳妇",
     "needLogin": false,
     "isActived": false,
     "order": 96,
@@ -292,7 +292,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=8f7029b477abf806b1125aff3a666e80",
-    "name": "开源访谈",
+    "name": "孙子",
     "needLogin": false,
     "isActived": false,
     "order": 98,
@@ -303,7 +303,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=8ebb873ebbdb5f60d33db3f7dd15d63b",
-    "name": "高手问答",
+    "name": "孙女",
     "needLogin": false,
     "isActived": false,
     "order": 99,
@@ -314,7 +314,7 @@
   {
     "fixed": false,
     "href": "https://www.oschina.net/action/apiv2/sub_list?token=b4ca1962b3a80823c6138441015d9836",
-    "name": "最新软件",
+    "name": "外孙",
     "needLogin": false,
     "isActived": false,
     "order": 100,

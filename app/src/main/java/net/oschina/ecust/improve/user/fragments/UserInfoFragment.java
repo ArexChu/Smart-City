@@ -424,10 +424,10 @@ public class UserInfoFragment extends BaseFragment implements View.OnClickListen
             UIHelper.showSetting(getActivity());
         } else {
 
-            if (!AccountHelper.isLogin()) {
-                LoginActivity.show(getActivity());
-                return;
-            }
+//            if (!AccountHelper.isLogin()) {
+//                LoginActivity.show(getActivity());
+//                return;
+//            }
 
             switch (id) {
                 case R.id.iv_logo_zxing:
