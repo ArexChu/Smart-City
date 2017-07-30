@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="net.oschina.ecust">
 
+    <uses-sdk tools:overrideLibrary="net.oschina.common, net.oschina.common.Native_Release"/>
+
     <!--自定义android 7.0自动更新下载完成弹窗安装申请意图的action的权限，危险级别为签名级别，即官方签名apk才能使用该权限-->
     <permission
         android:name="net.oschina.ecust.ACCESS_UPDATE_RESULT"
