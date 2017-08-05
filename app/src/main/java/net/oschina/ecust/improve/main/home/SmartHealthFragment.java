@@ -1,17 +1,15 @@
-package net.oschina.ecust.improve.main.tabs;
+package net.oschina.ecust.improve.main.home;
 
 import android.support.v7.widget.GridLayoutManager;
-import android.view.View;
 
 import net.oschina.ecust.R;
 import net.oschina.ecust.adapter.SmartCityAdapter;
 import net.oschina.ecust.improve.base.adapter.BaseRecyclerAdapter;
 import net.oschina.ecust.improve.base.fragments.BaseGeneralRecyclerFragment;
-import net.oschina.ecust.improve.user.activities.UserMessageActivity;
+import net.oschina.ecust.improve.feature.InvitationActivity;
 import net.oschina.ecust.util.UIHelper;
 
 import java.lang.reflect.Type;
-import java.util.Arrays;
 
 /**
  * Created by thanatosx on 2016/11/7.
@@ -109,7 +107,7 @@ public class SmartHealthFragment extends BaseGeneralRecyclerFragment {
         super.onItemClick(position, itemId);
         switch (position) {
             case 0:
-                UserMessageActivity.show(getActivity());
+                InvitationActivity.show(getContext(),"test");
                 break;
             case 1:
                 UIHelper.openInternalBrowser(getActivity(), "http://www.6thhosp.com");

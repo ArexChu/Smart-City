@@ -9,8 +9,11 @@ import net.oschina.ecust.improve.base.fragments.BaseGeneralListFragment;
 import net.oschina.ecust.improve.base.fragments.BaseGeneralRecyclerFragment;
 import net.oschina.ecust.improve.base.fragments.BaseViewPagerFragment;
 import net.oschina.ecust.improve.bean.SubTab;
+import net.oschina.ecust.improve.main.home.CommunityInteractionFragment;
+import net.oschina.ecust.improve.main.home.SmartCommunityFragment;
+import net.oschina.ecust.improve.main.home.SmartHealthFragment;
+import net.oschina.ecust.improve.main.home.SmartMallFragment;
 import net.oschina.ecust.improve.search.activities.SearchActivity;
-import net.oschina.ecust.improve.tweet.fragments.TopicTweetFragment;
 import net.oschina.ecust.improve.tweet.fragments.TweetFragment;
 import net.oschina.ecust.interf.OnTabReselectListener;
 

@@ -1,4 +1,4 @@
-package net.oschina.ecust.improve.main.tabs;
+package net.oschina.ecust.improve.main.home;
 
 import android.support.v7.widget.GridLayoutManager;
 
