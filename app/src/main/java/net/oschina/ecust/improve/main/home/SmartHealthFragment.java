@@ -6,7 +6,7 @@ import net.oschina.ecust.R;
 import net.oschina.ecust.adapter.SmartCityAdapter;
 import net.oschina.ecust.improve.base.adapter.BaseRecyclerAdapter;
 import net.oschina.ecust.improve.base.fragments.BaseGeneralRecyclerFragment;
-import net.oschina.ecust.improve.feature.InvitationActivity;
+import net.oschina.ecust.improve.feature.AppointmentRegistrationActivity;
 import net.oschina.ecust.util.UIHelper;
 
 import java.lang.reflect.Type;
@@ -107,7 +107,7 @@ public class SmartHealthFragment extends BaseGeneralRecyclerFragment {
         super.onItemClick(position, itemId);
         switch (position) {
             case 0:
-                InvitationActivity.show(getContext(),"test");
+                AppointmentRegistrationActivity.show(getActivity());
                 break;
             case 1:
                 UIHelper.openInternalBrowser(getActivity(), "http://www.6thhosp.com");

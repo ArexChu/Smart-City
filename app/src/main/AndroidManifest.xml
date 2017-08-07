@@ -556,10 +556,9 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="net.oschina.ecust.improve.feature.InvitationActivity"
-            android:label="活动报名"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" />
+            android:name="net.oschina.ecust.improve.feature.AppointmentRegistrationActivity"
+            android:label="预约挂号"
+            android:screenOrientation="portrait" />
 
         <service
             android:name="net.oschina.ecust.improve.tweet.service.TweetPublishService"
