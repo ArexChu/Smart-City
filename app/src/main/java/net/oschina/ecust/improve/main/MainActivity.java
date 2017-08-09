@@ -201,8 +201,8 @@ public class MainActivity extends BaseActivity implements NavFragment.OnNavigati
         super.initData();
         NoticeManager.init(this);
         // in this we can checkShare update
-        checkUpdate();
-        checkLocation();
+//        checkUpdate();
+//        checkLocation();
         TweetNotificationManager.setup(this);
     }
 

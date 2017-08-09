@@ -1,6 +1,7 @@
 package net.oschina.ecust.improve.feature;
 
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,6 +28,8 @@ public class ShakeNewsFragment extends BaseSensorFragment<ShakeNews> {
     private ImageView mImgNews;
     private TextView mTxtNewsName, mTxtPubTime;
 
+    long size;
+
     public static ShakeNewsFragment newInstance() {
         ShakeNewsFragment fragment = new ShakeNewsFragment();
         return fragment;
@@ -47,6 +50,9 @@ public class ShakeNewsFragment extends BaseSensorFragment<ShakeNews> {
         mDelayTime = 1;
         mCardView.setVisibility(View.GONE);
         mTvState.setText("摇一摇获取资讯");
+
+        size = ShakePresentFragment.size;
+        Log.e("arexsize", String.valueOf(size));
     }
 
     @Override

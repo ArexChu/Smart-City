@@ -1,5 +1,6 @@
 package net.oschina.ecust.improve.feature;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -20,6 +21,10 @@ import cz.msebera.android.httpclient.Header;
 public class ShakePresentFragment extends BaseFragment implements View.OnClickListener{
     @Bind(R.id.booking)
     Button mButton;
+
+//    String url = "http://172.20.190.27:8080/greeting";
+    String url = "http://192.168.1.170:8080/greeting";
+    public static long size;
 
     public static ShakePresentFragment newInstance() {
         ShakePresentFragment fragment = new ShakePresentFragment();
@@ -45,15 +50,15 @@ public class ShakePresentFragment extends BaseFragment implements View.OnClickLi
             case R.id.booking:
 
                 AsyncHttpClient client = new AsyncHttpClient();
-                client.get("http://172.20.190.27:8080/greeting", new TextHttpResponseHandler() {
+                client.get(url, new TextHttpResponseHandler() {
                             @Override
                             public void onSuccess(int statusCode, Header[] headers, String res) {
                                 // called when response HTTP status is "200 OK"
 
-                                String str = "{\"id\":42,\"content\":\"Hello, World!\",\"size\":38}";
                                 Gson gson = new Gson();
-                                Greeting greeting = gson.fromJson(str, Greeting.class);
-                                System.out.println(greeting);
+                                Greeting greeting = gson.fromJson(res, Greeting.class);
+                                size = greeting.size;
+                                Log.e("arex", String.valueOf(size));
                             }
 
                             @Override
