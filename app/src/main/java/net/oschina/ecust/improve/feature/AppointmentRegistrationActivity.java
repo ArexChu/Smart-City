@@ -2,6 +2,7 @@ package net.oschina.ecust.improve.feature;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -22,10 +23,13 @@ public class AppointmentRegistrationActivity extends BaseBackActivity implements
     @Bind(R.id.ll_shake_news)
     LinearLayout mLayShakeNews;
 
-    private ShakePresentFragment mPresentFragment;
-    private ShakeNewsFragment mNewsFragment;
+    private AppointmentFragment mPresentFragment;
+    private InquireFragment mNewsFragment;
 
     private boolean mIsRegisterPresent;
+
+    long size;
+    Bundle bundle;
 
     public static void show(Context context) {
         context.startActivity(new Intent(context, AppointmentRegistrationActivity.class));
@@ -39,9 +43,9 @@ public class AppointmentRegistrationActivity extends BaseBackActivity implements
     @Override
     protected void initWidget() {
         super.initWidget();
-        mNewsFragment = ShakeNewsFragment.newInstance();
-        mPresentFragment = ShakePresentFragment.newInstance();
-        addFragment(R.id.fl_content, mNewsFragment);
+//        mNewsFragment = InquireFragment.newInstance();
+        mPresentFragment = AppointmentFragment.newInstance();
+//        addFragment(R.id.fl_content, mNewsFragment);
         addFragment(R.id.fl_content, mPresentFragment);
         setState(mLayShakePresent, true);
         mIsRegisterPresent = true;
@@ -57,7 +61,11 @@ public class AppointmentRegistrationActivity extends BaseBackActivity implements
             setState(mLayShakePresent, true);
             mIsRegisterPresent = true;
         } else if (v.getId() == R.id.ll_shake_news) {
+            mNewsFragment = InquireFragment.newInstance();
+
+//            replaceFragment(R.id.fl_content, mNewsFragment);
             addFragment(R.id.fl_content, mNewsFragment);
+
             mNewsFragment.registerSensor();
             setState(mLayShakePresent, false);
             setState(mLayShakeNews, true);

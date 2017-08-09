@@ -3,6 +3,7 @@ package net.oschina.ecust.improve.feature;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.loopj.android.http.AsyncHttpClient;
@@ -18,16 +19,16 @@ import cz.msebera.android.httpclient.Header;
 /**
  * 摇一摇礼品相关实现
  */
-public class ShakePresentFragment extends BaseFragment implements View.OnClickListener{
+public class AppointmentFragment extends BaseFragment implements View.OnClickListener{
     @Bind(R.id.booking)
     Button mButton;
 
-//    String url = "http://172.20.190.27:8080/greeting";
-    String url = "http://192.168.1.170:8080/greeting";
+    String url = "http://172.20.220.48:8080/greeting";
+//    String url = "http://192.168.1.170:8080/greeting";
     public static long size;
 
-    public static ShakePresentFragment newInstance() {
-        ShakePresentFragment fragment = new ShakePresentFragment();
+    public static AppointmentFragment newInstance() {
+        AppointmentFragment fragment = new AppointmentFragment();
         return fragment;
     }
 
@@ -59,6 +60,11 @@ public class ShakePresentFragment extends BaseFragment implements View.OnClickLi
                                 Greeting greeting = gson.fromJson(res, Greeting.class);
                                 size = greeting.size;
                                 Log.e("arex", String.valueOf(size));
+
+                                Toast.makeText(getActivity(), "预约成功!",
+                                        Toast.LENGTH_LONG).show();
+
+
                             }
 
                             @Override

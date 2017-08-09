@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/tv_provinces"
             android:layout_toRightOf="@id/provinces"
-            android:text="全&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;省"
+            android:text="全&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;市"
             android:textColor="#5c5c5c"
             android:textSize="15sp"
             android:layout_width="wrap_content"

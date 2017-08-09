@@ -1,43 +1,58 @@
 package net.oschina.ecust.improve.feature;
 
+import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.TextHttpResponseHandler;
 
 import net.oschina.ecust.R;
 import net.oschina.ecust.api.remote.OSChinaApi;
-import net.oschina.ecust.bean.Banner;
 import net.oschina.ecust.improve.bean.base.ResultBean;
 import net.oschina.ecust.improve.bean.shake.ShakeNews;
 import net.oschina.ecust.util.StringUtils;
 import net.oschina.ecust.util.TDevice;
-import net.oschina.ecust.util.UIHelper;
 
 import java.lang.reflect.Type;
+
+import butterknife.Bind;
+import butterknife.OnClick;
+import cz.msebera.android.httpclient.Header;
 
 /**
  * 摇一摇新闻咨询等相关界面实现
  */
-public class ShakeNewsFragment extends BaseSensorFragment<ShakeNews> {
+public class InquireFragment extends BaseSensorFragment<ShakeNews> implements View.OnClickListener{
+    @Bind(R.id.inquire)
+    ImageView mImageView;
 
     private ImageView mImgNews;
     private TextView mTxtNewsName, mTxtPubTime;
 
-    long size;
+    String url = "http://172.20.220.48:8080/inquire";
+    //    String url = "http://192.168.1.170:8080/inquire";
+    public static long size;
 
-    public static ShakeNewsFragment newInstance() {
-        ShakeNewsFragment fragment = new ShakeNewsFragment();
+    public static InquireFragment newInstance() {
+        InquireFragment fragment = new InquireFragment();
         return fragment;
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_shake_news;
+        return R.layout.fragment_inquire;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
@@ -49,21 +64,41 @@ public class ShakeNewsFragment extends BaseSensorFragment<ShakeNews> {
         mTxtPubTime = (TextView) mShakeView.findViewById(R.id.tv_time);
         mDelayTime = 1;
         mCardView.setVisibility(View.GONE);
-        mTvState.setText("摇一摇获取资讯");
 
-        size = ShakePresentFragment.size;
-        Log.e("arexsize", String.valueOf(size));
+        size = AppointmentFragment.size;
+        mTvState.setText(String.format("前面等候还有%d个病人，估计还要%d分钟", size, size*5));
     }
+
+    @OnClick({R.id.inquire})
 
     @Override
     public void onClick(View v) {
-        if (mBean != null) {
-            Banner banner = new Banner();
-            ShakeNews news = mBean.getResult();
-            banner.setId(news.getId());
-            banner.setType(news.getType());
-            banner.setName(news.getName());
-            UIHelper.showBannerDetail(mContext, banner);
+        int id = v.getId();
+        switch (id) {
+            case R.id.inquire:
+
+                AsyncHttpClient client = new AsyncHttpClient();
+                client.get(url, new TextHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(int statusCode, Header[] headers, String res) {
+                                // called when response HTTP status is "200 OK"
+
+                                Gson gson = new Gson();
+                                Greeting greeting = gson.fromJson(res, Greeting.class);
+                                size = greeting.size;
+
+                                mTvState.setText(String.format("前面等候还有%d个病人，估计还要%d分钟", size, size*5));
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, Header[] headers, String res, Throwable t) {
+                                // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+                            }
+                        }
+                );
+                break;
+            default:
+                break;
         }
     }
 
