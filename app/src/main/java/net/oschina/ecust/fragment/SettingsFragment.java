@@ -165,7 +165,7 @@ public class SettingsFragment extends BaseFragment implements EasyPermissions.Pe
                 UIHelper.showAboutOSC(getActivity());
                 break;
             case R.id.rl_check_version:
-                onClickUpdate();
+//                onClickUpdate();
                 break;
             case R.id.rl_cancel:
                 // 清理所有缓存

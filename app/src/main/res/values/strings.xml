@@ -106,10 +106,10 @@
     <string name="git">码云推荐</string>
     <string name="gits">代码片段</string>
     <string name="actionbar_title_software_list">开源软件</string>
-    <string name="actionbar_title_user_blog">用户博客列表</string>
+    <string name="actionbar_title_user_blog">我的咨询</string>
     <string name="actionbar_title_my_information">我的资料</string>
     <string name="actionbar_title_setting">设置</string>
-    <string name="actionbar_title_about_osc">关于开源中国</string>
+    <string name="actionbar_title_about_osc">关于海慧康</string>
     <string name="actionbar_title_note">便签</string>
     <string name="actionbar_title_note_edit">编辑便签</string>
     <!-- 找人不显示标题 -->
@@ -204,7 +204,7 @@
     <string name="osc_site">官网</string>
     <string name="know_more">了解更多</string>
     <string name="git_app">Git客户端</string>
-    <string name="copyright">© 2017 OSChina.net All rights reserved.</string>
+    <string name="copyright">© 2017 Ecust All rights reserved.</string>
 
     <string name="tip_save_image_suc">图片已保存(手机相册-> osc_img)</string>
 

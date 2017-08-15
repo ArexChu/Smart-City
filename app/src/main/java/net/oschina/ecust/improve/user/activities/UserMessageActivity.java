@@ -188,11 +188,11 @@ public class UserMessageActivity extends BaseBackActivity implements NoticeManag
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case INDEX_MENTION:
-                    return formatMessageCount("@我", getNotice().getMention());
+                    return formatMessageCount("预约", getNotice().getMention());
                 case INDEX_COMMENT:
-                    return formatMessageCount("评论", getNotice().getReview());
+                    return formatMessageCount("查询", getNotice().getReview());
                 default:
-                    return formatMessageCount("私信", getNotice().getLetter());
+                    return formatMessageCount("", getNotice().getLetter());
             }
         }
     };

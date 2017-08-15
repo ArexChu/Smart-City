@@ -7,12 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import net.oschina.common.admin.Boss;
 import net.oschina.ecust.R;
 import net.oschina.ecust.Setting;
 import net.oschina.ecust.base.BaseFragment;
 import net.oschina.ecust.util.TDevice;
-import net.oschina.ecust.util.UIHelper;
-import net.oschina.common.admin.Boss;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -51,14 +50,14 @@ public class AboutOSCFragment extends BaseFragment {
         final int id = v.getId();
         switch (id) {
             case R.id.tv_grade:
-                TDevice.openAppInMarket(getActivity());
+//                TDevice.openAppInMarket(getActivity());
                 break;
             case R.id.tv_oscsite:
-                UIHelper.openInternalBrowser(getActivity(), "https://www.oschina.net");
+//                UIHelper.openInternalBrowser(getActivity(), "https://www.oschina.net");
                 break;
             case R.id.tv_knowmore:
-                UIHelper.openInternalBrowser(getActivity(),
-                        "https://www.oschina.net/home/aboutosc");
+//                UIHelper.openInternalBrowser(getActivity(),
+//                        "https://www.oschina.net/home/aboutosc");
                 break;
             case R.id.img_portrait:
                 Boss.verifyApp(getContext());

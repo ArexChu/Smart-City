@@ -413,7 +413,7 @@
         <activity
             android:name="net.oschina.ecust.improve.user.activities.UserMessageActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:label="消息中心"
+            android:label="我的预约"
             android:screenOrientation="portrait" />
         <activity
             android:name="net.oschina.ecust.improve.user.activities.UserSendMessageActivity"
@@ -482,7 +482,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="net.oschina.ecust.improve.user.event.UserEventActivity"
-            android:label="我的活动"
+            android:label="关于海慧康"
             android:screenOrientation="portrait" />
         <activity
             android:name="net.oschina.ecust.improve.main.FeedBackActivity"
