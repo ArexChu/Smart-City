@@ -102,7 +102,7 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
 //            R.id.nav_item_tweet_pub})
     @OnClick({R.id.nav_item_news, R.id.nav_item_tweet,
             R.id.nav_item_explore, R.id.nav_item_me})
-    
+
     @Override
     public void onClick(View v) {
         if (v instanceof NavigationButton) {

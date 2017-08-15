@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Display;
@@ -16,13 +17,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.google.zxing.WriterException;
-
 import net.oschina.ecust.AppContext;
 import net.oschina.ecust.R;
-import net.oschina.ecust.improve.account.AccountHelper;
 import net.oschina.ecust.util.ImageUtils;
-import net.oschina.ecust.util.QrCodeUtils;
 
 import java.io.File;
 
@@ -42,13 +39,15 @@ public class MyQRCodeDialog extends Dialog {
         View contentView = getLayoutInflater().inflate(
                 R.layout.dialog_my_qr_code, null);
         mIvCode = (ImageView) contentView.findViewById(R.id.iv_qr_code);
-        try {
-            bitmap = QrCodeUtils.Create2DCode(String.format(
-                    "http://my.oschina.net/u/%s", AccountHelper.getUserId()));
+//        try {
+//            bitmap = QrCodeUtils.Create2DCode(String.format(
+//                    "http://my.oschina.net/u/%s", AccountHelper.getUserId()));
+            bitmap = BitmapFactory.decodeResource(context.getResources(),
+                    R.mipmap.wechat_qr_code);
             mIvCode.setImageBitmap(bitmap);
-        } catch (WriterException e) {
-            e.printStackTrace();
-        }
+//        } catch (WriterException e) {
+//            e.printStackTrace();
+//        }
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         mIvCode.setOnLongClickListener(new OnLongClickListener() {
             @Override
@@ -56,13 +55,13 @@ public class MyQRCodeDialog extends Dialog {
                 dismiss();
                 try {
                     String sdPath = Environment.getExternalStorageDirectory().getAbsolutePath();
-                    File file = new File(sdPath + File.separator + "OSChina"
+                    File file = new File(sdPath + File.separator + "Ecust"
                             + File.separator);
                     if (!file.exists()) file.mkdirs();
                     file = new File(file.getAbsoluteFile(), "qrcode.png");
                     if (file.exists()) file.delete();
                     ImageUtils.saveImageToSD(context, file.getAbsolutePath(), bitmap, 100);
-                    AppContext.showToast("二维码已保存到oschina文件夹下");
+                    AppContext.showToast("二维码已保存到ecust文件夹下");
                 } catch (Exception e) {
                     e.printStackTrace();
                     AppContext.showToast("SD卡不可写，二维码保存失败");
