@@ -12,20 +12,18 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
+import net.oschina.common.widget.drawable.shape.BorderShape;
 import net.oschina.ecust.R;
 import net.oschina.ecust.improve.account.AccountHelper;
 import net.oschina.ecust.improve.base.fragments.BaseFragment;
 import net.oschina.ecust.improve.main.tabs.DynamicTabFragment;
-import net.oschina.ecust.improve.main.tabs.ExploreFragment;
 import net.oschina.ecust.improve.main.tabs.HomeViewPagerFragment;
 import net.oschina.ecust.improve.main.tabs.TweetViewPagerFragment;
 import net.oschina.ecust.improve.notice.NoticeBean;
 import net.oschina.ecust.improve.notice.NoticeManager;
-import net.oschina.ecust.improve.tweet.activities.TweetPublishActivity;
 import net.oschina.ecust.improve.user.activities.UserFansActivity;
 import net.oschina.ecust.improve.user.activities.UserMessageActivity;
 import net.oschina.ecust.improve.user.fragments.UserInfoFragment;
-import net.oschina.common.widget.drawable.shape.BorderShape;
 
 import java.util.List;
 
@@ -99,17 +97,21 @@ public class NavFragment extends BaseFragment implements View.OnClickListener, N
 
     }
 
+//    @OnClick({R.id.nav_item_news, R.id.nav_item_tweet,
+//            R.id.nav_item_explore, R.id.nav_item_me,
+//            R.id.nav_item_tweet_pub})
     @OnClick({R.id.nav_item_news, R.id.nav_item_tweet,
-            R.id.nav_item_explore, R.id.nav_item_me,
-            R.id.nav_item_tweet_pub})
+            R.id.nav_item_explore, R.id.nav_item_me})
+    
     @Override
     public void onClick(View v) {
         if (v instanceof NavigationButton) {
             NavigationButton nav = (NavigationButton) v;
             doSelect(nav);
-        } else if (v.getId() == R.id.nav_item_tweet_pub) {
-            TweetPublishActivity.show(getContext(), mRoot.findViewById(R.id.nav_item_tweet_pub));
         }
+//        else if (v.getId() == R.id.nav_item_tweet_pub) {
+//            TweetPublishActivity.show(getContext(), mRoot.findViewById(R.id.nav_item_tweet_pub));
+//        }
     }
 
     public void setup(Context context, FragmentManager fragmentManager, int contentId, OnNavigationReselectListener listener) {

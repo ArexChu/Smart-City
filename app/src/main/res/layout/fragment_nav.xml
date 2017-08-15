@@ -22,16 +22,16 @@
         android:paddingLeft="@dimen/lay_12"
         android:paddingRight="@dimen/lay_12" />
 
-    <ImageView
-        android:id="@+id/nav_item_tweet_pub"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:contentDescription="@null"
-        android:padding="2dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_nav_add_selector" />
+    <!--<ImageView-->
+        <!--android:id="@+id/nav_item_tweet_pub"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:padding="2dp"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/ic_nav_add_selector" />-->
 
     <net.oschina.ecust.improve.main.nav.NavigationButton
         android:id="@+id/nav_item_explore"
