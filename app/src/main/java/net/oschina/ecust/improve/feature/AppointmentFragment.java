@@ -70,6 +70,8 @@ public class AppointmentFragment extends BaseFragment implements View.OnClickLis
                             @Override
                             public void onFailure(int statusCode, Header[] headers, String res, Throwable t) {
                                 // called when response HTTP status is "4XX" (eg. 401, 403, 404)
+                                Toast.makeText(getActivity(), "请检查网络是否连接!",
+                                        Toast.LENGTH_LONG).show();
                             }
                         }
                 );

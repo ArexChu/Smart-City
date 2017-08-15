@@ -14,7 +14,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -106,17 +105,17 @@ public class MainActivity extends BaseActivity implements NavFragment.OnNavigati
         mNavBar = ((NavFragment) manager.findFragmentById(R.id.fag_nav));
         mNavBar.setup(this, manager, R.id.main_container, this);
 
-        if (AppContext.get("isFirstComing", true)) {
-            View view = findViewById(R.id.layout_ripple);
-            view.setVisibility(View.VISIBLE);
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    ((ViewGroup) v.getParent()).removeView(v);
-                    AppContext.set("isFirstComing", false);
-                }
-            });
-        }
+//        if (AppContext.get("isFirstComing", true)) {
+//            View view = findViewById(R.id.layout_ripple);
+//            view.setVisibility(View.VISIBLE);
+//            view.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    ((ViewGroup) v.getParent()).removeView(v);
+//                    AppContext.set("isFirstComing", false);
+//                }
+//            });
+//        }
     }
 
     @Override
