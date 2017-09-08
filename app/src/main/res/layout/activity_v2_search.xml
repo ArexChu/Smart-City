@@ -28,7 +28,7 @@
                 android:background="@drawable/shape_search_view"
                 app:iconifiedByDefault="false"
                 app:queryBackground="@color/transparent"
-                app:queryHint="搜索博客、软件、资讯、问答、找人" />
+                app:queryHint="搜索健康、社区、商城、圈子、家庭" />
 
             <TextView
                 android:id="@+id/tv_cancel"

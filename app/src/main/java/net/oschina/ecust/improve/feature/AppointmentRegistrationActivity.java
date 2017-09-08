@@ -2,7 +2,6 @@ package net.oschina.ecust.improve.feature;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
@@ -26,10 +25,6 @@ public class AppointmentRegistrationActivity extends BaseBackActivity implements
     private AppointmentFragment mPresentFragment;
     private InquireFragment mNewsFragment;
 
-    private boolean mIsRegisterPresent;
-
-    long size;
-    Bundle bundle;
 
     public static void show(Context context) {
         context.startActivity(new Intent(context, AppointmentRegistrationActivity.class));
@@ -47,8 +42,6 @@ public class AppointmentRegistrationActivity extends BaseBackActivity implements
         mPresentFragment = AppointmentFragment.newInstance();
 //        addFragment(R.id.fl_content, mNewsFragment);
         addFragment(R.id.fl_content, mPresentFragment);
-        setState(mLayShakePresent, true);
-        mIsRegisterPresent = true;
     }
 
     @OnClick({R.id.ll_shake_present, R.id.ll_shake_news})
@@ -56,47 +49,26 @@ public class AppointmentRegistrationActivity extends BaseBackActivity implements
     public void onClick(View v) {
         if (v.getId() == R.id.ll_shake_present) {
             addFragment(R.id.fl_content, mPresentFragment);
-            mNewsFragment.unregisterSensor();
-            setState(mLayShakeNews, false);
-            setState(mLayShakePresent, true);
-            mIsRegisterPresent = true;
         } else if (v.getId() == R.id.ll_shake_news) {
             mNewsFragment = InquireFragment.newInstance();
 
 //            replaceFragment(R.id.fl_content, mNewsFragment);
             addFragment(R.id.fl_content, mNewsFragment);
-
-            mNewsFragment.registerSensor();
-            setState(mLayShakePresent, false);
-            setState(mLayShakeNews, true);
-            mIsRegisterPresent = false;
         }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mNewsFragment.unregisterSensor();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (mIsRegisterPresent) {
-        } else {
-            mNewsFragment.registerSensor();
-        }
     }
 
     @Override
     public void finish() {
         super.finish();
-        mNewsFragment.unregisterSensor();
-    }
-
-    private void setState(LinearLayout layout, boolean selected) {
-        for (int i = 0; i < layout.getChildCount(); i++) {
-            layout.getChildAt(i).setSelected(selected);
-        }
     }
 }
