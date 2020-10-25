@@ -17,6 +17,8 @@ import java.lang.reflect.Type;
 
 public class SmartHealthFragment extends BaseGeneralRecyclerFragment {
     private String[] itemNames = new String[]{
+            "-问卷调查",
+            "流行病调查", "体验度和便利性调查",
             "-预约挂号",
             "医院官网", "微医", "好大夫在线",
             "-健康档案",
@@ -35,6 +37,8 @@ public class SmartHealthFragment extends BaseGeneralRecyclerFragment {
     };
 
     private int[] itemIcons = new int[]{
+            R.drawable.questionnaire,
+            R.drawable.diabetes_index, R.drawable.glucosemeter,
             R.drawable.appointment_registration,
             R.drawable.hospital_official_website, R.drawable.micro_hospital, R.drawable.good_doctor_online,
             R.drawable.health_document,
@@ -53,6 +57,8 @@ public class SmartHealthFragment extends BaseGeneralRecyclerFragment {
     };
 
     private int[] itemTypes = new int[]{
+            1,
+            0, 0,
             1,
             0, 0, 0,
             1,
@@ -106,16 +112,22 @@ public class SmartHealthFragment extends BaseGeneralRecyclerFragment {
 
         super.onItemClick(position, itemId);
         switch (position) {
-            case 0:
-                AppointmentRegistrationActivity.show(getActivity());
-                break;
             case 1:
-                UIHelper.openInternalBrowser(getActivity(), "http://www.6thhosp.com");
+                UIHelper.openInternalBrowser(getActivity(), "https://www.wjx.cn/jq/94857222.aspx");
                 break;
             case 2:
-                UIHelper.openInternalBrowser(getActivity(), "http://www.guahao.com");
+                UIHelper.openInternalBrowser(getActivity(), "https://www.wjx.cn/jq/94817318.aspx");
                 break;
             case 3:
+                AppointmentRegistrationActivity.show(getActivity());
+                break;
+            case 4:
+                UIHelper.openInternalBrowser(getActivity(), "http://www.6thhosp.com");
+                break;
+            case 5:
+                UIHelper.openInternalBrowser(getActivity(), "http://www.guahao.com");
+                break;
+            case 6:
                 UIHelper.openInternalBrowser(getActivity(), "http://www.haodf.com/");
                 break;
             default:
